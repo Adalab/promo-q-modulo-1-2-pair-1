@@ -1,111 +1,13 @@
-/*@import 'core/variables';
-@import 'core/reset';
-@import 'components/code';
+/*
+;
+
 @import 'components/links';
 @import 'layout/page';
-@import 'layout/header';
 @import 'layout/footer';
 @import 'pages/index';*/
 
-:root {
-    --color-text: #f6ffff;
-    /*LA LETRA*/
-}
-
-.header{
-background-color: #010101;
-        height: 50px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-}
-
-.nav-logo {
-    height: 40px;
-
-}
-
-.nav-icon {
-    width: 40px;
-}
-
-.section1{
-    background-color: #529DF1;
-        background-image: url(../images/premium_dancer.png) none;
-        background-repeat: no-repeat; /*no debe verse*/
-    display: flex;
-    flex-direction: column;
-    /*height: 40%; a secciones no poner height y width*/
-}
-
-.prueba-premium {
-    font-size: 295%;
-    color: var(--color-text);
-    padding-top: 20%;
-    padding-left: 3%;
-}
-
-.intro-premium{
-    font-size: 150%;
-    color: var(--color-text);
-    padding-left: 3%;
-    line-height: 1.5;
-    margin-top: 3%;
-    margin-bottom: 3%;
-}
-
-.button {
-    background-color: #3DB758;
-    border: none;
-    color: var(--color-text);
-    border-radius: 40px;
-    width: 40%;
-    height: 30px; /*fjo, px o rem/em; las imágenes y los iconos también*/
-    font-size: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.terminos{
-    font-size: 100%;
-    color: var(--color-text);
-    padding-top: 6%;
-    padding-bottom: 6%;
-    padding-left: 3%;
-}
-
-.section2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.intro-2{
-    text-align: center;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    font-size: 1.5rem;
-}
-
-
-.b1, .b2, .b3, .b4{
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-}
-
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-}
-
-.cajitas{
-    display:  flex;
-    flex-direction: row-reverse;
-}
-.figure{
-    width: 30%;
-}
+@import 'core/reset';
+@import 'core/variables';
+@import 'components/code';
+@import 'components/sections';
+@import 'layout/header';
