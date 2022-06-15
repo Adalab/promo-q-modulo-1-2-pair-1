@@ -1,11 +1,11 @@
 .section1{
     background-color: #529DF1;
-        background-image: url(../images/premium_dancer.png) none;
-        background-repeat: no-repeat; /*no debe verse*/
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     @media all and (min-width:768px){
-        background-image: url(../images/premium_dancer.png);
+        background-image: url(./assets/images/premium_dancer.png);
     }
     /*height: 40%; a secciones no poner height y width*/
 }
@@ -46,11 +46,19 @@
     padding-left: 3%;
 }
 
-.section2{
+/*.section2{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+*/
+
+.section2{
+    display: grid;
+    grid-area: 'title title' 'box box' 'box box' 'box box' 'box box';
+   
+    
+ }
 
 .intro-2{
     text-align: center;
@@ -65,19 +73,27 @@
     height: 80px;
     object-fit: contain;
 }
-
+.cajitas{
+    justify-content: center;
+}
 .wrapper{
+    text-align: center;
+    align-items: center;  
+    display: flex;
+    flex-direction: row;
+    &__info {
+        width: 200px;
+    }
+}
+
+.cajitas{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70%;
-}
-
-.cajitas{
-    display:  flex;
-    flex-direction: row-reverse;
 }
 .figure{
     width: 30%;
 }
+
+

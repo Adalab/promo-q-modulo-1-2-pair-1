@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="" alt="logo Spotify">
+    </header>
+    <main class="main">
+        <section class="main__section--1">
+            <h2 class="main__title--big">Registrate gratis para escuchar.</h2>
+            <button class="main__button--blue">Regístrate con Facebook</button>
+            <button class="main__button--white">Regístrate con Google</button>
+            <div class="main__decor">o</div>
+        </section>
+        <section class="main__section--2">
+            <h3 class="main__title--small">Regístrate con tu correo electrónico</h3>
+            <form action="" method="POST">
+                <label for="email">¿Cuál es tu correo electrónico?</label>
+                <input type="email" name="email" id="email" placeholder="Pon tu correo electrónico">
+
+                <label for="validation-email">Confirma tu correo electrónico</label>
+                <input type="email" name="validation-email" id="validation-email"
+                    placeholder="Vuelve a poner tu correo electrónico">
+
+                <label for="password">Crea una contraseña</label>
+                <input type="password" name="password" id="password" placeholder="Crea una contraseña">
+
+                <label for="name">¿Cómo quieres que te llamemos?</label>
+                <input type="text" name="name" id="name" placeholder="Pon un nombre de perfil">
+
+                <p class="form__warning">Esto aparece en tu perfil.</p>
+
+                <fieldset>
+                    <legend>¿Cuál es tu fecha de nacimiento?</legend>
+
+                    <label for="day">Día</label>
+                    <input type="number" name="date" id="day" max="31" placeholder="DD">
+
+                    <label for="month">Mes</label>
+                    <select name="date" id="month">
+                        <option value="" selected disabled>mm</option>
+                        <option value="01">enero</option>
+                        <option value="02">febrero</option>
+                        <option value="03">marzo</option>
+                        <option value="04">abril</option>
+                        <option value="05">mayo</option>
+                        <option value="06">junio</option>
+                        <option value="07">julio</option>
+                        <option value="08">agosto</option>
+                        <option value="09">septiembre</option>
+                        <option value="10">octubre</option>
+                        <option value="11">noviembre</option>
+                        <option value="12">diciembre</option>
+                    </select>
+
+                    <label for="year">Año</label>
+                    <input type="number" name="year" id="year" placeholder="AAAA" min="1900" max="2003">
+                </fieldset>
+                <legend>¿Cuál es tu género?</legend>
+                <input type="radio" name="genre" id="man">
+                <label for="man">Hombre</label>
+                <input type="radio" name="genre" id="woman">
+                <label for="woman">Mujer</label>
+                <input type="radio" name="genre" id="nb">
+                <label for="nb">No binario</label>
+
+                <label for="cb1">Quiero recibir cosicas por correo</label>
+                <input type="checkbox" name="notifications" id="cb1">
+                <label for="cb2">Acepto que le vendais mi información personal a todo el mundo.</label>
+                <input type="checkbox" name="notifications" id="cb2">
+
+                <input type="submit" value="Regístrate">
+            </form>
+        </section>
+        <p>¿Ya tienes cuenta? <a href="#">Inicia sesión</a></p>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
