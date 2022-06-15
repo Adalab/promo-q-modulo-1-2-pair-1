@@ -46,11 +46,20 @@
     padding-left: 3%;
 }
 
-.section2{
+/*.section2{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+*/
+
+.section2{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows:  repeat (5, 1fr);
+   
+    
+ }
 
 .intro-2{
     text-align: center;
@@ -70,14 +79,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center ;
     width: 70%;
 }
 
 .cajitas{
-    display:  flex;
-    flex-direction: row-reverse;
+    display: grid;
+  grid-template-columns:2fr 1fr;
+  grid-template-rows:  1fr;
+  text-align: center;
+  align-items: center;
+
 }
 .figure{
     width: 30%;
 }
+
+
